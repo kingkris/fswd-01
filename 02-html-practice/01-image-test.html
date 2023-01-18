@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Demo</title>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  *{margin: 0;padding: 0;}
+  .img-box{
+    background-color: #c0c0c0;
+    padding: 20px;
+    display: inline-block;
+    border: solid 2px mintcream;
+    border-radius: 4px;
+    margin: 5px;
+    width: 20%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+.box{
+  background-color:bisque;
+  height: 100vh;
+}
+.box h1{
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+#baa-thrishul:before, #baa-thrishul:after{
+  display: block;
+  content: "";
+  width: 100px;
+  height: 60vh;
+  position: absolute;
+  top: 0;bottom: 0;
+  margin: auto 0;
+  background-repeat: no-repeat;
+  background-size: 75px auto;
+}
+
+#baa-thrishul:before{
+  left: 0;
+  background-image: url(https://prabhubaa.com/wp-content/uploads/2022/11/chakras.png);
+  background-position: center left;
+}
+#baa-thrishul:after{
+  right: 0;
+  background-image: url(https://prabhubaa.com/wp-content/uploads/2022/12/thrishul-1.png);
+  background-position: center right;
+}
+@media screen and (max-width: 600px) {
+  #baa-thrishul:before, #baa-thrishul:after{
+    background-size: 50px auto;
+    background-color: red;
+    width: 60px;
+  }
+}
+
+</style>
+
+</head>
+<body>
+  <div class="box" id="baa-thrishul">
+    <h1>hello</h1>
+  </div>
+  <div class="wrapper">
+    <h1>Image Demo</h1>
+    <div class="img-box">
+      <h2>JPG</h2>
+      <img src="images/image-compare-jog.jpg" alt="Image Demo">
+    </div>
+    <div class="img-box">
+      <h2>PNG 24</h2>
+      <img src="images/image-compare-png24.png" alt="Image Demo">
+    </div>
+    <div class="img-box">
+      <h2>PNG 8</h2>
+      <img src="images/image-compare-png8.png" alt="Image Demo">
+    </div>
+    <div class="img-box">
+      <h2>Gif</h2>
+      <img src="images/image-compare-gif.gif" alt="Image Demo">
+    </div>
+    <div class="img-box">
+      <h2>webp</h2>
+      <img src="images/image-compare-webp.webp" alt="Image Demo">
+    </div>
+    <div class="img-box">
+      <h2>svg</h2>
+      <img src="images/image-compare-SVG.svg" alt="Image Demo">
+    </div>    
+  </div>
+</body>
+</html>

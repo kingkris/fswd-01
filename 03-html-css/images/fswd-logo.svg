@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82" height="44" viewBox="0 0 82 44">
+  <g id="menu-btn" transform="translate(-2292 2925)">
+    <g id="btn-bg" transform="translate(2292 -2925)" fill="#e2e2e2" stroke="#e2e2e2" stroke-width="1">
+      <rect width="82" height="44" rx="22" stroke="none"/>
+      <rect x="0.5" y="0.5" width="81" height="43" rx="21.5" fill="none"/>
+    </g>
+    <g id="profile_button" data-name="profile button">
+      <g id="bg" transform="translate(2334 -2921)" fill="#fff" stroke="#ff5100" stroke-width="2">
+        <rect width="36" height="36" rx="18" stroke="none"/>
+        <rect x="1" y="1" width="34" height="34" rx="17" fill="none"/>
+      </g>
+      <g id="profile-icon" transform="translate(2296.403 -2921.801)">
+        <path id="Path_79148" data-name="Path 79148" d="M35.259,18.319a4.259,4.259,0,1,1,4.259-4.259A4.257,4.257,0,0,1,35.259,18.319Zm0-7.6a3.362,3.362,0,1,0,3.362,3.362A3.358,3.358,0,0,0,35.259,10.72Z" transform="translate(-11.174)" fill="#535353"/>
+        <path id="Path_79149" data-name="Path 79149" d="M31.571,61.4h-.9V60.275A6.3,6.3,0,0,0,24.4,54H23.77a6.3,6.3,0,0,0-6.276,6.276V61.4h-.9V60.275A7.194,7.194,0,0,1,23.77,53.1H24.4a7.194,7.194,0,0,1,7.173,7.173Z" transform="translate(0 -33.595)" fill="#535353"/>
+      </g>
+    </g>
+    <g id="hamburger" transform="translate(-19 22.388)">
+      <g id="noun-code-133832" transform="translate(2175.65 -3082.591)">
+        <path id="Path_79247" data-name="Path 79247" d="M189.249,193.754a.5.5,0,0,0,.7-.7l-8.4-8.4,8.4-8.4a.5.5,0,0,0-.7-.7L180.5,184.3a.494.494,0,0,0,0,.7Z" transform="translate(0 -27.175)"/>
+        <path id="Path_79248" data-name="Path 79248" d="M409.592,193.754a.5.5,0,0,0,.7,0L419.045,185a.494.494,0,0,0,0-.7l-8.753-8.753a.5.5,0,0,0-.7.7l8.4,8.4-8.4,8.4A.5.5,0,0,0,409.592,193.754Z" transform="translate(-208.84 -27.175)"/>
+        <path id="Path_79249" data-name="Path 79249" d="M305.548,169.337a.509.509,0,0,0,.144.021.5.5,0,0,0,.474-.351l6.932-22.776a.5.5,0,1,0-.948-.288l-6.932,22.776A.5.5,0,0,0,305.548,169.337Z" transform="translate(-113.808)"/>
+      </g>
+    </g>
+  </g>
+</svg>

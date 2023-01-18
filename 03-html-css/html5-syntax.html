@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 5 Syntax</title>
+  <!-- 
+    <base href="https://www.krisschool.in"> 
+  -->
+  <link rel="stylesheet" href="css/01-css-demo.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <style>
+    #main-title{
+      border: solid 2px cyan;
+      border-radius: 10px 30px;
+      background-color: cornflowerblue;
+    }
+    .page-title{
+      background-color: crimson;
+      border-bottom: 5px solid greenyellow;
+      font-family: 'Sevillana';
+      font-size: 50px;
+      color: blanchedalmond;
+      text-align: center;
+      padding: 20px;
+    }
+    .whatever-name{
+      border: solid 8px darkolivegreen;
+      border-radius: 10px;
+      background-color: olivedrab;
+    }
+    header{
+      background-color: #d3f3c7;
+      border: 1px solid #000;
+      padding: 10px;
+      margin-left: 20px;
+    }
+    nav{
+      border: solid 5px green;
+    }
+    ul{
+      border: solid 2px black;
+    }
+    nav li{
+      border: solid 1px red;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>Tab Index Demo</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Link 01</a></li>
+        <li><a href="#">Link 02</a></li>
+        <li><a href="#" tabindex="1">Link 03</a></li>
+        <li><a href="#">Link 04</a></li>
+        <li><a href="#">Link 05</a></li>
+      </ul>
+    </nav>
+  </header>
+  <H1 contenteditable class="page-title whatever-name" id="main-title" style="font-family: AgencyFB;font-size: 24px; text-transform: uppercase;">This is Valid html 5 H1 tag, written in uppercase</H1>
+  <h1  id="main-title">This is Valid html 5 h1 tag, written in lowercase</h1>
+
+  <img src="images/image-compare-png24.png" alt="test" class="whatever-name" title="100 Days of Running">
+
+  <img src="images/image-compare-png24.png" alt="test" class="whatever-name" />
+  <strong style="border: solid 1px red;">This is a strong tag</strong>
+  <b style="border: solid 1px red;">this is a b tag</b> <i style="border: solid 1px red;">this is an i tag</i>
+  <em style="border: solid 1px red;">this is em tag</em>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+----------16 April 17 V 1.2-------------------
+- Added: Poftfolio image popup
+
+----------10 April 17 V 1.1-------------------
+- Added: Working PHP Contact Form
+
+----------01 April 17 V 1.0-------------------
+- Initial release

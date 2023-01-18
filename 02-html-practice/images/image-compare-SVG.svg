@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="250" viewBox="0 0 300 250">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="300" height="250" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+    <g id="Group_1" data-name="Group 1">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="354" height="106" rx="10" transform="translate(-23 -17)" fill="#d216d4"/>
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="129.5" cy="129.5" r="129.5" transform="translate(-78 -40)" fill="#d4a616" opacity="0.702"/>
+      <text id="_100_days_of" data-name="100 days of" transform="translate(88.332 127.77)" font-size="33.333" font-family="MyriadPro-Regular, Myriad Pro"><tspan x="0" y="0">100 days of</tspan></text>
+      <text id="RUNNING" transform="translate(92.332 173.77)" font-size="40" font-family="MyriadPro-Regular, Myriad Pro"><tspan x="0" y="0">RUNNING</tspan></text>
+    </g>
+  </g>
+</svg>

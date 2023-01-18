@@ -1,0 +1,97 @@
+/* Tag Selector */
+body{
+  background-color: #ffccf7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tips{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border: solid 1px grey;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 12px 12px 12px 30px;
+  font-size: 16px;
+}
+.bdr{
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+h1{
+  font-size: 40px;
+}
+
+
+.list-demo{
+  border: double 3px green;
+}
+
+.list-xyz{
+  margin: 0;
+}
+
+li p{
+  margin: 0;
+}
+
+
+
+blockquote{
+  background-color: lightgray;
+  padding: 20px;
+  font-size: 2em;
+  border-left: 5px solid #000;
+}
+blockquote cite{
+  font-size: 18px;
+}
+blockquote cite::before{
+  content: "- ";
+}
+
+@media screen and (max-width:768px) {
+  body{
+    background-color: #ecfdff;
+  }
+  .tips{display: none;}
+}
+@media screen and (min-width:769px) {
+  body{
+    background-color: #fbf8e0;
+  }
+}
+
+
+a{
+  font-size: 14px;
+  text-transform: uppercase;
+  color: blue;
+  text-decoration: none;
+}
+a:visited{
+  color: blueviolet;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:active{
+  background-color: orangered;
+  color: white;
+  text-decoration: none;
+}
+a:focus{
+  background-color: orangered;
+  color: white;
+  text-decoration: none;
+  outline: dotted  1px blue;
+}
+
+.dabba{
+  width: 970px;
+  margin: 20px auto;
+  padding: 50px 10px;
+  background-color: #fff;
+  min-height: 100vh;
+}
