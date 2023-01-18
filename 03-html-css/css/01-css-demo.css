@@ -2,11 +2,12 @@
 body{
   background-color: #ffccf7;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0; /* overriding the default margin of the body */
 }
 
 .tips{
   position: fixed;
-  top: 10px;
+  bottom: 10px;
   right: 10px;
   border: solid 1px grey;
   border-radius: 10px;
@@ -95,3 +96,16 @@ a:focus{
   background-color: #fff;
   min-height: 100vh;
 }
+
+
+/* Class Selector */
+.site-header{
+  background-color: #dbdb00;
+  padding: 10px;
+  text-align: center;
+}
+/* Child Selector */
+nav a{
+  border: solid 1px red;
+}
+

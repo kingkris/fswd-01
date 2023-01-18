@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe - Social Media Widgets</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/01-css-demo.css">
+</head>
+<body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0&appId=129355640461162&autoLogAppEvents=1" nonce="VVqYCydK"></script>
+
+  <header class="site-header">
+    <img src="images/fswd-logo.svg" alt="Full Stack Web Development Course">
+    <nav>
+      <a href="01-heading-tags.html">Headings</a>
+      <a href="02-html-vs-xhtml.html">html vs xhtml</a>
+      <a href="03-lists-demo.html?vs=22">Lists</a>
+      <a href="04-links.html">Links</a>
+      <a href="05-social-widgets.html">Social Media Integration</a>
+      <a href="06-images.html">Images</a>
+      <a href="#1section">Section 1</a>
+      <a href="#2section">Section 2</a>
+      <a href="#3section">Section 3</a>
+      <a href="https://krisschool.in/full-stack-web-developer/">Full Stack Web Development Course</a>
+    </nav>
+  </header>
+
+
+  <ul class="tips">
+    <li>What kind of element is it?</li>
+    <li>What kind of content can come inside it </li>
+    <li>Who can be its parents </li>
+    <li>What are its default styles </li>
+    <li>Attributes </li>
+  </ul>
+  <div class="dabba" id="1section">
+    <h2>Iframes </h2>
+    <p>Loading another html file using a iframe</p>
+    <iframe src="04-links.html" frameborder="1" width="800" height="400"></iframe>
+  </div>
+  <div class="dabba" id="1section">
+    <h2>Iframes </h2>
+    <p>Loading another website using a iframe</p>
+    <iframe src="https://www.krishnegowda.com" frameborder="1" width="500" height="768"></iframe>
+  </div>
+  <div class="dabba" id="1section">
+    <h2>Loading Google Maps </h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15446.084444113227!2d74.29508816977537!3d14.569356399999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa3b8180f5b48ff2!2sPK%20Beach%20Stay!5e0!3m2!1sen!2sin!4v1674012379011!5m2!1sen!2sin"  height="450" style="border:0;width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="dabba" id="1section">
+    <h2>Loaing Youtube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TMTOIbTDit8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="dabba" id="1section">
+    <h2>Facebook Comment Widget</h2>
+    <div class="fb-comments" data-href="https://www.krishnegowda.com/there-is-tomorrow/" data-width="600" data-numposts="5"></div>
+  </div>
+</body>
+</html>
