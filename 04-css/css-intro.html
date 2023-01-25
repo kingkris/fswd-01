@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Intro | Selectors, Specificity</title>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+
+<!-- INternal Styles -->
+
+<style>
+  /* Universal Selector */
+  *{
+    /* border: dashed 1px black; */
+  }
+  .site-nav *{               /* Example of universal selector using descendant selector */
+  border: solid 2px red;
+  margin: 10px;
+  }
+
+  /* Tag Selector or Type Selector */
+  p{
+    font-size: 18px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  h1, h2, h3{             /* grouping of selector */
+    font-weight: 400;
+    color: green;
+    background-color: yellowgreen;
+    border-bottom: 8px solid green;
+    padding: 10px;
+  }
+  .site-nav ul{
+    text-align: center;
+    border: none;
+  }
+  .site-nav li{ /* Example of tag selector using descendant selector */
+    display: inline-block;
+    border: none;
+  }
+  .site-nav li a{ /* Example of class selector using descendant selector */
+    border: none;
+    background-color: lightblue;
+    border-radius: 15px;
+    padding: 6px 20px;  /* Top-Bottom Right-Left  */
+    color: brown;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .page-header{
+    background-color: violet;
+    border-radius: 20px 20px 0 0;  /* Top-Left Top-Right Bottom-Right Bottom-Left */
+  }
+  .logo{
+    text-align: center;
+  }
+  .logo img{
+    border-radius: 100%;
+  }
+  
+  /* ID Selector */
+  #hero-banner{
+    background-color: lightsalmon;
+    padding: 10% 15%; /* Top-Bottom Right-Left */
+  }
+
+   /* Psuedo Selectors */
+
+  aside a:link{
+    text-decoration: none;
+  }
+  aside a:hover{
+    text-decoration: line-through;
+    background-color: lightgray;
+  }
+
+  aside a::before{
+    content: "\00a7";
+    padding-right: 10px;
+  }
+  /* .hero h1::first-letter{
+    font-size: 80px;
+  } */
+  .hero ::first-letter{
+    font-size: 200%;
+    color: brown;
+  }
+  .topic-list{
+    margin-bottom: 200px;
+  }
+  .topic-list li{
+    border-top: 1px solid #CCC;
+  }
+  .topic-list li:last-child{
+    border-bottom: 1px solid #CCC;
+  }
+  /* .topic-list li:nth-child(odd){
+    background-color: lightpink;
+  } */
+  .topic-list li:nth-child(3n){
+    background-color: lightpink;
+  }
+
+  /* Attribute Selector - https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+  a[href$=".pdf"]::after{  /* $ checks the value for the ending */
+    content: "PDF Download";
+    font-size: 12px;
+    text-transform: uppercase;
+    color: green;
+  }
+  a[href^="https://"]::after{ /* $ checks the value for the ending */
+    content: "external link";
+    font-size: 12px;
+    text-transform: uppercase;
+    color: green;
+  }
+  .lead-text      {color: red !important;}
+  p               {color: green;}
+  #lead-txt-one   {color:firebrick}
+
+
+.dabba{
+  background-color: lightpink;
+  border: solid 1px black;
+  padding: 100px 300px 50px; /* 3 values - Top : RightLeft : Bottom */
+}
+.logo-one{
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+}
+b.logo-one{border-style: dashed;}
+p .logo-one{border-style: dotted;}
+
+
+/* p.logo-one{ border: dashed 3px green;}
+
+p .logo-one{ border: dashed 3px orange;} */
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+      <div class="logo"><img src="https://fakeimg.pl/120x120/ff0000/FFFFFF?text=Logo&font=Poppins" class="animate__heartBeat animate__infinite"></div>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#">01 Link</a></li>
+          <li><a href="#">02 Link</a></li>
+          <li><a href="#">03 Link</a></li>
+          <li><a href="#">04 Link</a></li>
+          <li><a href="#">05 Link</a></li>
+          <li><a href="#">06 Link</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="dabba">
+      <p class="logo-one">Logo
+        <strong class="logo-one">Another logo</strong>
+      </p>
+      <img src="https://fakeimg.pl/100x100/CCC?text=Logo" class="logo-one">
+      <b class="logo-one">Logo</b>
+    </div>
+    <div class="hero" id="hero-banner">
+      <h1>Welcome to the Journey of <span class="animate__heartBeat animate__animated animate__infinite">STYLE</span></h1>
+      <p>Learn CSS in style by writing css while you learn.</p>
+      <p class="lead-text" id="lead-txt-one">This a paragraph element, and am using multiple selectors on this</p>
+    </div>
+    <main>
+      <h2>One more sub heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque vero quae enim perferendis quidem tempore nobis beatae laborum fugiat asperiores, modi doloribus labore error eius tenetur saepe quasi sequi!</p>
+    </main>
+    <aside>
+      <h3>Other Topics</h3>
+      <ul class="topic-list">
+        <li><a href="lesson-one.pdf">Download PDF</a></li>
+        <li><a href="https://krisschool.in/full-stack-web-developer/" target="_blank">Full Stack Web Development Course</a></li>
+        <li><a href="#">Topic 03</a></li>
+        <li><a href="https://www.krishnegowda.com">Topic 04</a></li>
+        <li><a href="#">Topic 05</a></li>
+        <li><a href="#">Topic 06</a></li>
+        <li><a href="#">Topic 07</a></li>
+        <li><a href="#">Topic 08</a></li>
+        <li><a href="#">Topic 09</a></li>
+        <li><a href="#">Topic 10</a></li>
+      </ul>
+    </aside>
+  </div>
+</body>
+</html>
