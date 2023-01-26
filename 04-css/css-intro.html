@@ -72,7 +72,21 @@
     padding: 10% 15%; /* Top-Bottom Right-Left */
   }
 
-   /* Psuedo Selectors */
+   /* Psuedo Selectors 
+   
+        Psuedo Classes are written with single :
+        Psuedo Elements are written with double ::
+        
+   https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+   
+   https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+
+   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
+
+
+   */
+
 
   aside a:link{
     text-decoration: none;
@@ -146,7 +160,35 @@ p .logo-one{border-style: dotted;}
 p .logo-one{ border: dashed 3px orange;} */
 
 
+/* 
 
+CSS Reset
+Normalise
+
+Universal reset
+*{padding:0;margin:0;}
+
+4 VALUES -->    TOP RIGHT BOTTOM LEFT
+3 VALUES -->    TOP RIGHT:LEFT BOTTOM 
+2 VALUES -->    TOP:BOTTOM RIGHT:LEFT 
+
+
+
+ */
+
+  .dabba, 
+  .container, 
+  section{
+    background-color: #F5F5F5;
+    border: solid 1px #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 1170px;
+  }
+  .dabba{font-size: 14px;}
+  .container{font-weight: bold;}
+  section{font-size: 18px;}
 
 
 
@@ -199,6 +241,30 @@ p .logo-one{ border: dashed 3px orange;} */
         <li><a href="#">Topic 10</a></li>
       </ul>
     </aside>
+
   </div>
+
+
+  <style>
+    .direction-demo{
+      margin: 20px auto;
+      width: 250px;
+      min-height: 250px;
+      padding: 70px;
+      background-color: cornflowerblue;
+      border-color: #d2691ea2 gold;
+      border-width: 50px 30px 70px ;
+      border-style: solid dashed dotted double;
+    }
+  </style>
+
+  <div class="direction-demo">
+      4 VALUES -->    TOP RIGHT BOTTOM LEFT
+      3 VALUES -->    TOP RIGHT:LEFT BOTTOM 
+      2 VALUES -->    TOP:BOTTOM RIGHT:LEFT 
+  </div>
+
+
+
 </body>
 </html>
