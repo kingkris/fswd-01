@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Journey | learning style by styling</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/01-type.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <!-- Begin of Site Header -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html"><img src="images/css-journey-logo.svg" alt="CSS Journey | learning style by styling" width="204"></a>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="01-type.html">Type</a></li>
+        <li><a href="02-block.html">Block</a></li>
+        <li><a href="03-list.html">List</a></li>
+        <li><a href="04-background.html">Background</a></li>
+        <li><a href="05-border.html">Border</a></li>
+        <li><a href="06-box.html">Box</a></li>
+        <li><a href="07-position.html">Position</a></li>
+        <li><a href="08-at-rules.html">@ Rules</a></li>
+        <li><a href="09-font-icons.html">Font Icons</a></li>
+        <li><a href="10-animations.html">Animations</a></li>
+        <li><a href="11-flex.html">Flex</a></li>
+        <li><a href="12-grids.html">Grids</a></li>
+        <li><a href="13-video-n-audio.html">Video & Audio</a></li>
+        <li><a href="14-canvas.html">Canvas</a></li>
+        <li><a href="15-tables.html">Tables</a></li>
+        <li><a href="16-email.html">Email</a></li>
+        <li><a href="17-forms.html">Forms</a></li>
+        <li><a href="18-latest-html5-css3.html">Latest in HTML5 & CSS3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>CSS Properties related to Type (Fonts)</h1>
+    <p>Learn about all style properties related to fonts in a elaborate way with examples.</p>
+  </div>
+<!-- Demo of font-style -->
+  <div class="container">
+    <header class="section-header">
+      <h2>font-style: <small>normal | italic | oblique</small></h2>
+    </header>
+    <div class="demo-box">
+      <h3>h3 element without the style</h3>
+      <h3 class="font-style">h3 element with style applied </h3>
+      <p>Lorem <i> this is a i tag</i> ipsum dolor sit amet <em>This is a em tag</em> consectetur adipisicing elit. Voluptatibus quam optio eligendi quidem deleniti. Quia esse repellat repellendus? Doloribus voluptatum quisquam explicabo asperiores earum animi saepe atque ea delectus quasi.</p>
+    </div>
+    <div class="demo-box font-style">
+      <h3>testing inheritance</h3>
+      <h3>h3 element with style applied </h3>
+      <p>Lorem <i> this is a i tag</i> ipsum dolor sit amet <em>This is a em tag</em> consectetur adipisicing elit. Voluptatibus quam optio eligendi quidem deleniti. Quia esse repellat repellendus? Doloribus voluptatum quisquam explicabo asperiores earum animi saepe atque ea delectus quasi.</p>
+    </div>
+  </div><!--  /EO container -->
+  
+  <!-- Demo of font-weight -->
+  <div class="container">
+    <header class="section-header">
+      <h2>font-weight: <small>normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900</small></h2>
+    </header>
+    <div class="demo-box">
+      <h2>Demo of font-weight on default font</h2>
+      <p class="fw-100">p tag with the font weight 100 with different font-face</p>
+      <p class="fw-200">p tag with the font weight 200 with different font-face</p>
+      <p class="fw-300">p tag with the font weight 300 with different font-face</p>
+      <p class="fw-400">p tag with the font weight 400 with different font-face</p>
+      <p class="fw-500">p tag with the font weight 500 with different font-face</p>
+      <p class="fw-600">p tag with the font weight 600 with different font-face</p>
+      <p class="fw-700">p tag with the font weight 700 with different font-face</p>
+      <p class="fw-800">p tag with the font weight 800 with different font-face</p>
+      <p class="fw-900">p tag with the font weight 900 with different font-face</p>
+    </div>
+    <div class="demo-box ff-poppins">
+      <h2>Demo of font-weight on Poppins</h2>
+      <p class="fw-100">p tag with the font weight 100 with different font-face</p>
+      <p class="fw-200">p tag with the font weight 200 with different font-face</p>
+      <p class="fw-300">p tag with the font weight 300 with different font-face</p>
+      <p class="fw-400">p tag with the font weight 400 with different font-face</p>
+      <p class="fw-500">p tag with the font weight 500 with different font-face</p>
+      <p class="fw-600">p tag with the font weight 600 with different font-face</p>
+      <p class="fw-700">p tag with the font weight 700 with different font-face</p>
+      <p class="fw-800">p tag with the font weight 800 with different font-face</p>
+      <p class="fw-900">p tag with the font weight 900 with different font-face</p>
+    </div>
+  </div><!--  /EO container -->
+  
+  <!-- Demo of font-size -->
+  <div class="container">
+    <header class="section-header">
+      <h2>font-size: </h2>
+    </header>
+    <div class="demo-box fsz-px">
+      <h2 class="fsz-40">Demo of font size in px</h2>
+      <h2>Demo of font size in px</h2>
+      <h3>This is h3 tag </h3>
+      <h4>This is h4 tag</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur aliquam recusandae nostrum officiis laudantium officia, possimus accusantium, mollitia minus dolores nihil cupiditate molestias a! Harum esse animi laudantium cumque.</p>
+    </div>
+    <div class="demo-box fsz-rem">
+      <h2 class="fsz-40">Demo of font size in rem</h2>
+      <h2>Demo of font size in px</h2>
+      <h3>This is h3 tag </h3>
+      <h4>This is h4 tag</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur aliquam recusandae nostrum officiis laudantium officia, possimus accusantium, mollitia minus dolores nihil cupiditate molestias a! Harum esse animi laudantium cumque.</p>
+    </div>
+    <div class="demo-box fsz-vw">
+      <h2>Demo of font size in vw</h2>
+      <h3>This is h3 tag </h3>
+      <h4>This is h4 tag</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur aliquam recusandae nostrum officiis laudantium officia, possimus accusantium, mollitia minus dolores nihil cupiditate molestias a! Harum esse animi laudantium cumque.</p>
+    </div>
+  </div><!--  /EO container -->
+
+  <!-- Demo of line-height -->
+  <div class="container">
+    <header class="section-header">
+      <h2>line-height: </h2>
+    </header>
+
+    <div class="lh-dabba">
+      <h3>This is a heading of ths box, if the text is more and if ot overflows</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorem adipisci magnam aperiam, vitae error, eius laboriosam accusamus qui corporis quia cumque delectus voluptatem incidunt! Voluptatem voluptas ipsam minus accusantium.</p>
+      <ul>
+        <li>List items of thelist</li>
+        <li>List items of thelist</li>
+        <li>List items of thelist</li>
+        <li>List items of thelist</li>
+        <li>List items of thelist</li>
+      </ul>
+    </div>
+
+
+    <div class="demo-box width50">
+      <p>This is defulat lineheight. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur aliquam recusandae nostrum officiis laudantium officia, possimus accusantium, mollitia minus dolores nihil cupiditate molestias a! Harum esse animi laudantium cumque.</p>
+      <hr>
+      <p class="lh-2">This is line-height of 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur aliquam recusandae nostrum officiis laudantium officia, possimus accusantium, mollitia minus dolores nihil cupiditate molestias a! Harum esse animi laudantium cumque.</p>
+      <hr>
+      <p class="lh-2px">This is line-height of 2px. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur aliquam recusandae nostrum officiis laudantium officia, possimus accusantium, mollitia minus dolores nihil cupiditate molestias a! Harum esse animi laudantium cumque.</p>
+      <hr>
+    </div>
+  </div><!--  /EO container -->
+
+  <!-- Demo of line-height -->
+  <div class="container">
+    <header class="section-header">
+      <h2>text-transform: <small>none | uppercase | lowercase | capitalize</small></h2>
+    </header>
+    <div class="demo-box">
+      <h3 class="tt-u">Text Transform Uppercase demo</h3>
+      <h3 class="tt-c">Text transform cAPITALIZE demo</h3>
+      <h3 class="tt-l">Text transform cAPITALIZE demo</h3>
+      <p class="tt-u">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, inventore repellat pariatur obcaecati iste vero <b> mollitia maxime suscipit vel earum cum placeat labore</b> aliquam asperiores temporibus autem sed, adipisci eum!</p>
+    </div>
+  </div><!--  /EO container -->
+
+
+  <!-- /- End of Site Header -->
+  <footer class="site-footer">
+    <p>&copy;2023, KriS' School of Web - all rights reserved.</p>
+  </footer>
+
+  <!-- Beginning of Site Footer -->
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+
+body{
+  background-color: #2C2C2C;
+  margin: 0;
+}
+
+
+
+
+.site-header{
+  background-color: #3A3E46;
+}
+
+.page-header{
+  background-color: #FCB415;
+}
+
+
+.demo-box{
+  border: solid 1px ;
+  background-color: #fff;
+  margin: 30px;
+  padding: 20px;
+}
