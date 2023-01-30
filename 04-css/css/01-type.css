@@ -67,7 +67,7 @@ Shorthand property
 		^ This property can be applied to all the elements
 		^ you can animate
 
-		color values can be applied in 4 diff formats
+		color values can be applied in 5 diff formats
 		1. colornames - eg. red; http://htmlcolorcodes.com/color-names/
 		2. hex decimal codes - eg. #FF0000
 				0 1 2 3 4 5 6 7 8 9 A B C D E F
@@ -111,6 +111,8 @@ inherit;
 ~  color:
 ~  text-decoration:none | underline | overline | line-through
 ~  text-shadow – css3
+
+https://css3generator.com/ 
 */
 
 
@@ -151,6 +153,11 @@ Demo of font-size property
 .fsz-vw{font-size: 6vw;}
 .fsz-vw p{font-size: 3vw;}
 
+.fsz-em-rem{font-size: 2em;}
+/* .fsz-em-rem p{font-size: 1rem;} */
+
+
+
 
 /* 
 Demo of line-height property
@@ -188,3 +195,56 @@ Demo of text-transform property
 .tt-c{text-transform: capitalize;}
 .tt-l{text-transform: lowercase;}
 .tt-u b{text-transform: none;}
+
+
+
+
+/* 
+Demo of text-transform property
+*********************************************
+*/
+
+.ff-demo{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.font-sh-demo{
+	/* font: italic 600 20px/30px 'poppins', sans-serif ; */
+	
+/* 	
+	font-style: italic;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: 'poppins', sans-serif;
+ */
+
+	font:  20px/1.25;
+
+
+}
+
+/* ~~   font: [font-style font-weight font-size/line-height font-family] */
+
+
+.ff-serif{font-family: 'Times New Roman', Times, serif;}
+.ff-monospace{font-family:  'Courier New',Courier,monospace; }
+.ff-cursive{font-family: 'Brush Script MT', cursive; 
+}
+
+.demo-color{color: rgb(115, 115, 115);}
+.demo-color h2{color: #ff000099;}
+/* .demo-color h2{color: #f009;} Shorthand format 8 digit hex code */
+
+.demo-color h5{
+	color: #6f0000;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-decoration: underline overline line-through;
+}
+.demo-color h4{
+	color: #1d0061;
+	font-size: 80px;
+	text-transform: uppercase;
+	text-shadow: 0 0 2px #FF0000;
+}
