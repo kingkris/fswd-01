@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS block related properties | CSS Journey</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/02-block.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <!-- Begin of Site Header -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html"><img src="images/css-journey-logo.svg" alt="CSS Journey | learning style by styling" width="204"></a>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="01-type.html">Type</a></li>
+        <li><a href="02-block.html">Block</a></li>
+        <li><a href="03-list.html">List</a></li>
+        <li><a href="04-background.html">Background</a></li>
+        <li><a href="05-border.html">Border</a></li>
+        <li><a href="06-box.html">Box</a></li>
+        <li><a href="07-position.html">Position</a></li>
+        <li><a href="08-at-rules.html">@ Rules</a></li>
+        <li><a href="09-font-icons.html">Font Icons</a></li>
+        <li><a href="10-animations.html">Animations</a></li>
+        <li><a href="11-flex.html">Flex</a></li>
+        <li><a href="12-grids.html">Grids</a></li>
+        <li><a href="13-video-n-audio.html">Video & Audio</a></li>
+        <li><a href="14-canvas.html">Canvas</a></li>
+        <li><a href="15-tables.html">Tables</a></li>
+        <li><a href="16-email.html">Email</a></li>
+        <li><a href="17-forms.html">Forms</a></li>
+        <li><a href="18-latest-html5-css3.html">Latest in HTML5 & CSS3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>CSS Properties related to Block</h1>
+    <p>Learn about all style properties related to fonts in a elaborate way with examples.</p>
+  </div>
+<!-- Demo of word-spacing -->
+  <div class="container">
+    <header>
+      <h2>word-spacing: <small>normal | &lt;length&gt; </small></h2>
+    </header>
+    <div class="demo-box">
+      <h3 class="ws-demo">h3 element without the style</h3>
+      <h3 class="ls-demo">h3 element with style applied </h3>
+      <p><img src="https://fakeimg.pl/300x200/200" class="va-demo">
+        Lorem <i> this is a i tag</i> ipsum dolor sit amet <em>This is a em tag</em> consectetur adipisicing elit. Voluptatibus quam optio eligendi quidem deleniti. Quia esse repellat repellendus? Doloribus voluptatum quisquam explicabo asperiores earum animi saepe atque ea delectus quasi.</p>
+
+        <p class="ta-l-demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aut nam, maiores voluptate provident quaerat ratione impedit culpa quis molestiae natus distinctio iusto tenetur vel officiis nesciunt dolorum? Adipisci, corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A recusandae, at eum, sequi sit est quibusdam accusantium eius autem repudiandae eveniet. Neque sapiente hic cumque odit corporis aliquam quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur aliquam ut porro dolorum sunt nihil molestiae temporibus ipsum vel nemo, odit at rem exercitationem? Illum adipisci asperiores vel minus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aut nam, maiores voluptate provident quaerat ratione impedit culpa quis molestiae natus distinctio iusto tenetur vel officiis nesciunt dolorum? Adipisci, corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A recusandae, at eum, sequi sit est quibusdam accusantium eius autem repudiandae eveniet. Neque sapiente hic cumque odit corporis aliquam quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur aliquam ut porro dolorum sunt nihil molestiae temporibus ipsum vel nemo, odit at rem exercitationem? Illum adipisci asperiores vel minus!</p>
+        <p class="ta-r-demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aut nam, maiores voluptate provident quaerat ratione impedit culpa quis molestiae natus distinctio iusto tenetur vel officiis nesciunt dolorum? Adipisci, corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A recusandae, at eum, sequi sit est quibusdam accusantium eius autem repudiandae eveniet. Neque sapiente hic cumque odit corporis aliquam quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur aliquam ut porro dolorum sunt nihil molestiae temporibus ipsum vel nemo, odit at rem exercitationem? Illum adipisci asperiores vel minus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aut nam, maiores voluptate provident quaerat ratione impedit culpa quis molestiae natus distinctio iusto tenetur vel officiis nesciunt dolorum? Adipisci, corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A recusandae, at eum, sequi sit est quibusdam accusantium eius autem repudiandae eveniet. Neque sapiente hic cumque odit corporis aliquam quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur aliquam ut porro dolorum sunt nihil molestiae temporibus ipsum vel nemo, odit at rem exercitationem? Illum adipisci asperiores vel minus!</p>
+        <p class="ta-c-demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aut nam, maiores voluptate provident quaerat ratione impedit culpa quis molestiae natus distinctio iusto tenetur vel officiis nesciunt dolorum? Adipisci, corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A recusandae, at eum, sequi sit est quibusdam accusantium eius autem repudiandae eveniet. Neque sapiente hic cumque odit corporis aliquam quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur aliquam ut porro dolorum sunt nihil molestiae temporibus ipsum vel nemo, odit at rem exercitationem? Illum adipisci asperiores vel minus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aut nam, maiores voluptate provident quaerat ratione impedit culpa quis molestiae natus distinctio iusto tenetur vel officiis nesciunt dolorum? Adipisci, corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A recusandae, at eum, sequi sit est quibusdam accusantium eius autem repudiandae eveniet. Neque sapiente hic cumque odit corporis aliquam quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur aliquam ut porro dolorum sunt nihil molestiae temporibus ipsum vel nemo, odit at rem exercitationem? Illum adipisci asperiores vel minus!</p>
+        <p class="ta-j-demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aut nam, maiores voluptate provident quaerat ratione impedit culpa quis molestiae natus distinctio iusto tenetur vel officiis nesciunt dolorum? Adipisci, corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A recusandae, at eum, sequi sit est quibusdam accusantium eius autem repudiandae eveniet. Neque sapiente hic cumque odit corporis aliquam quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur aliquam ut porro dolorum sunt nihil molestiae temporibus ipsum vel nemo, odit at rem exercitationem? Illum adipisci asperiores vel minus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aut nam, maiores voluptate provident quaerat ratione impedit culpa quis molestiae natus distinctio iusto tenetur vel officiis nesciunt dolorum? Adipisci, corrupti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A recusandae, at eum, sequi sit est quibusdam accusantium eius autem repudiandae eveniet. Neque sapiente hic cumque odit corporis aliquam quae maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consectetur aliquam ut porro dolorum sunt nihil molestiae temporibus ipsum vel nemo, odit at rem exercitationem? Illum adipisci asperiores vel minus!</p>
+    </div>
+
+  </div><!--  /EO container -->
+ 
+  
+<!-- Demo of whitespace -->
+  <div class="container">
+    <header>
+      <h2>white-space: <small>normal | pre | nowrap | pre-wrap | pre-line</small></h2>
+    </header>
+    <div class="demo-box">
+      <pre>
+  so much depends
+    upon
+
+  a red wheel
+    barrow
+
+  glazed with rain
+    water
+
+  beside the white
+    chickens
+      </pre>
+      <div class="whitesapce-demo">
+      so much depends
+        upon
+    
+      a red wheel
+        barrow
+    
+      glazed with rain
+        water
+    
+      beside the white
+        chickens
+      </div>
+      <div class="whitesapce-demo-nowrap">
+      so much depends
+        upon
+    
+      a red wheel
+        barrow
+    
+      glazed with rain
+        water
+    
+      beside the white
+        chickens Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet error ullam, maxime inventore placeat ratione distinctio! Omnis, enim facere cum, illo temporibus tenetur fugiat accusamus magnam asperiores totam dolorem.
+      </div>
+    </div>
+
+  </div><!--  /EO container -->
+  
+  <!-- Demo of display -->
+  <div class="container">
+    <header>
+      <h2>display: <small>block | inline | inline-block | 
+        table | table-row | table-cell | 
+        list-item | none</small></h2>
+    </header>
+    <div class="demo-box demo-block-inline">
+      <p>p -- Block level elemnt</p>
+      <h2>h2 - block level element</h2>
+      <div>div -- block level element</div>
+      <span>span -- inline element</span>
+      <i>i inline element</i>
+    </div>
+    <div class="demo-box demo-inlineblock">
+      <p>p -- Block level elemnt</p>
+      <h2>h2 - block level element</h2>
+      <div>div -- block level element</div>
+      <span>span -- inline element</span>
+      <i>i inline element</i>
+    </div>
+
+  </div><!--  /EO container -->
+
+  <!-- Demo of counter -->
+  <div class="container">
+    <h2>Topic 1: Overview</h2>
+    <ul>
+      <li>Chapter 1.1: Lesson One</li>
+      <li>Chapter 1.2: Lesson Two</li>
+    </ul>
+
+  </div><!--  /EO container -->
+
+  <!-- /- End of Site Header -->
+  <footer class="site-footer">
+    <p>&copy;2023, KriS' School of Web - all rights reserved.</p>
+  </footer>
+
+  <!-- Beginning of Site Footer -->
+
+</body>
+</html>

@@ -5,15 +5,58 @@ body{
   margin: 0;
 }
 
-
+/* ******************************
+Styles related to site-header 
+*********************************
+*/
 .site-header{
   background-color: #3A3E46;
 }
+.site-nav{}
+.site-nav ul{}
+.site-nav ul li{
+  display: inline-block;
+}
+.site-nav ul li a{
+  color: #A8A8A8;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.site-nav ul li a:hover{
+  color: #FCB415;
+  font-weight: bold;
+}
+/* ******************************
+Styles related to Page header 
+*********************************
+*/
 
 .page-header{
   background-color: #FCB415;
 }
 
+/* ******************************
+Styles related to demo box 
+*********************************
+*/
+.container{}
+.container header{}
+.container header h2{
+  font-size: 20px;
+  font-weight: 300;
+  color: #F5F0F0;
+}
+.container header h2::before{
+  font-size: 14px;
+  font-weight: 400;
+  color: #6A6E76;
+  content: "DEMO OF ";
+}
+.container header h2:hover::before{
+  display: none;
+}
+.container header h2 small{font-size: 16px;}
 
 .demo-box{
   border: solid 1px ;
