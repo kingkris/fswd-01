@@ -38,3 +38,17 @@ List related important links
 +++++++++++++++++++++++++++++++++++++++++++
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters
 */
+
+
+.demo-list-style-none{
+    border: solid 1px red;
+}
+.demo-list-style-none li{
+    list-style-type: kannada;
+    list-style-position: outside;
+    border: solid 1px black;
+    list-style-image: url('../images/icon-ham.svg');
+}
+
+
+

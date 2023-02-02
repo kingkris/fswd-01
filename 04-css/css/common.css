@@ -3,7 +3,11 @@
 body{
   background-color: #2C2C2C;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #444;
 }
+
 
 /* ******************************
 Styles related to site-header 
@@ -23,7 +27,8 @@ Styles related to site-header
   text-transform: uppercase;
   text-decoration: none;
 }
-.site-nav ul li a:hover{
+.site-nav ul li a:hover,
+.site-nav ul li a.active{
   color: #FCB415;
   font-weight: bold;
 }
@@ -53,9 +58,12 @@ Styles related to demo box
   color: #6A6E76;
   content: "DEMO OF ";
 }
+/* 
 .container header h2:hover::before{
   display: none;
-}
+} 
+*/
+
 .container header h2 small{font-size: 16px;}
 
 .demo-box{

@@ -77,3 +77,37 @@ inherit;
   border: 1px solid #000;
   margin: 10px;
   }
+
+.demo-block-inline p{
+    background-color: #F00;
+    color: #FFF;
+    text-align: center;
+}
+.demo-inlineblock p{
+    background-color: #F00;
+    color: #FFF;
+    text-align: center;
+}
+
+.img-grid{
+    background-color: lightgray;
+    padding: 10px;
+    width: 400px;
+}
+.img-grid a{
+    border: solid 4px red;
+    display: block;
+}
+.img-grid img{
+    border: solid 4px blue;
+    display: block;
+    width: 100%;
+
+}
+
+
+.demo-text-overflow{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

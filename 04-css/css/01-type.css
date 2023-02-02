@@ -141,6 +141,7 @@ Demo of font-weight property
 
 	
 .ff-poppins{font-family: 'Poppins', sans-serif;}
+.ff-arial{font-family: 'Arial', sans-serif;}
 
 /* 
 Demo of font-size property
@@ -248,3 +249,27 @@ Demo of text-transform property
 	text-transform: uppercase;
 	text-shadow: 0 0 2px #FF0000;
 }
+
+
+
+.demo-alpha{
+	/* color: #F005; */
+	color: rgba(255,0,0,.55);
+	font-size: 50px;
+	line-height: 10px;
+	font-weight: 700;
+}
+
+
+.animation{
+	font-size: 50px;
+	color: green;
+	transition: all 1s ease;
+	font-weight: 700;
+}
+
+.animation:hover{
+	color: red;
+	font-size: 70px;
+}
+
