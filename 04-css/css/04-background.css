@@ -141,9 +141,9 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
     margin: 20px 0;
     padding: 30px 5px 30px 80px;
     position: relative;
+    font-size: 18px;
 }
 .feature ul li::before{
-    text-align: center;
     width: 65px;
     height: 65px;
     position: absolute;
@@ -152,17 +152,19 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
     background-image: url('../images/icon-sprite.svg');
     content: "";
 }
+.icon-first::before { background-position: 0 0;}
+.icon-second::before{ background-position: -180px 0;}
+.icon-third::before { background-position: -180px -95px;}
 
-.icon-first::before{
-    background-position: 0 0;
+.feature ul li::after{
+    width: 80px;
+    height: 8px;
+    position: absolute;
+    left: 79px;
+    top: 52px;
+    content: "";
+    background-color: #CCC;
 }
-.icon-second::before{
-    background-position: -180px 0;
-}
-.icon-third::before{
-    background-position: -180px -95px;
-}
-
 
 
 
@@ -192,4 +194,27 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
     padding: 50px 30px 20px;
 }
 
-
+.ghost-btn{
+    border: solid 1px #000;
+    border-radius: 25px;
+    padding: 12px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+}
+.ghost-btn:hover{
+    color: #FFF;
+    background-color: #000;
+}
+.ghost-btn:hover{
+    color: #FFF;
+    background-color: #000;
+}
+.ghost-btn:focus{
+    box-shadow: 0 0 5px red;
+    outline: red;
+}
+.ghost-btn:active{
+    box-shadow: 0 0 3px green;
+}

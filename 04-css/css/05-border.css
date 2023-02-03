@@ -11,7 +11,7 @@
 Border related style properties
 +++++++++++++++++++++++++++++++++++++++++++
 ~  border-width -
-    ^ default value 3px - normal
+    ^ default value 1.5px - normal
     ^ This property doesn't gets inherited
     ^ This property can be applied to all elements
     ^ You can animate
@@ -60,3 +60,48 @@ Border related important links
 +++++++++++++++++++++++++++++++++++++++++++
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Border-image_generator
 */
+
+.dabba-one{
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: salmon;
+    color: darkgreen;
+    border-style: solid dotted dashed;
+    border-width: 4px;
+    border-color: brown;
+}
+.dabba-two{
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: salmon;
+    color: darkgreen;
+    border: solid 10px rebeccapurple;
+    border-radius: 10px 0 50px 5px;
+}
+
+.dabba-three{
+                  width: 500px;
+                 margin: 30px auto;
+                padding: 30px;
+
+     border-image-slice: 15 15 15 15;
+     border-image-width: 10px 10px 10px 10px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+           border-style: solid;
+    border-image-source: url("../images/border-image.svg");
+}
+.table-style{
+    border: solid 1px red;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.table-style td{
+    border: solid 1px black;
+    padding: 10px;
+}
+
+
+
