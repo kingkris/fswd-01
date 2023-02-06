@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #F0F2F5;
+  font-size: 14px;
+  color: #050505;
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.feeds{ 
+  margin: 0 15px;
+}
+
+
+
+.dabba{
+  background-color: lightpink;
+  padding: 12px 16px;
+  cursor: url("../images/green-cursor.png") auto;
+  opacity: .5;
+}
+.dabba::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.dabba img{
+  float: left;
+  border-radius: 50%;
+}
+.dabba .txt-details{
+  margin-left: 120px;
+}
+
+
+
+
+.feed-card{
+  max-width: 680px;
+  margin: 20px auto;
+  border: solid 1px #d9d9d9;
+  background: #FFF;
+  border-radius: 10px;
+
+}
+.feed-card header{
+  padding: 12px 16px;
+}
+.feed-card header::after{ /* CLEAR FIX */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.profile-pic{
+  float: left;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 2px solid #00F;
+  padding: 2px;
+  display: block;
+}
+.details{
+  float: left;
+  padding-left: 10px;
+}
+.details h2{
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.details p{
+  padding: 0;
+  margin: 0;
+}
+
+.actions{
+  float: right;
+}
+.actions a{
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+.actions a:hover{
+  background-color: #CCC;
+}
+.actions a img{
+display: inline-block;  
+vertical-align: middle;
+}
+
+
+
+.feed-txt{
+  padding: 0 16px;
+}
+.feed-picture{
+  width: 100%;
+  height: auto;
+}
+

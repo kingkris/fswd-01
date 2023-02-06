@@ -25,6 +25,8 @@ Position related style properties
 ~  bottom: <length>
 ~  right : <length>
 ~  left  : <length>
+~  inset  : <length>
+
     ^ default value auto
     ^ This property doesn't gets inherited
     ^ This property can be applied to all positioned elements
@@ -49,4 +51,67 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 /* ==========================================================================
    Demo of Position related properties
    ========================================================================== */
+
+.bdr-1{border: 2px solid #000;}
+.bg-red             {background-color: red;}
+.bg-lightgreen      {background-color: lightgreen;}
+.bg-lightpink       {background-color: lightpink;}
+.bg-lightblue       {background-color: lightblue;}
+.bg-lightsalmon     {background-color: lightsalmon;}
+.bg-orange          {background-color: orange;}
+.bg-brown           {background-color: brown;}
+
+
+.position-demo-static{
+    position: static;
+}
+.position-demo-relative{
+    position: relative;
+    top: -40px;
+}
+.demo-z-index{
+    z-index: 1;
+    position: relative;
+}
+.demo-pos-abs{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.pos-rel{
+    position: relative;
+    width: 600px;
+    min-height: 50vh;
+}
+
+.demo-pos-fixed{
+    position: fixed;
+    bottom: 1px;
+    right: 100px;
+    left: 100px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.dabba{
+    margin: 30px auto;
+    max-width: 660px;
+}
+.dabba-1{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.dabba-1 h2{
+    position: sticky;
+    top: 10px;
+    background-color: crimson;
+    border-radius: 10px 10px 0 0;
+    color: #FFF;
+    padding: 10px;
+    margin: 0 0 10px;
+}
 

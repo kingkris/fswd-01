@@ -222,3 +222,11 @@ Box related important links
     width: 100%;
     display: block;
    }
+
+
+
+
+   .column-demo{
+    columns: 3;
+    column-rule: dotted 1px red;
+}

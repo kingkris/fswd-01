@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS position related properties | CSS Journey</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/07-position.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <!-- Begin of Site Header -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html"><img src="images/css-journey-logo.svg" alt="CSS Journey | learning style by styling" width="204"></a>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="01-type.html">Type</a></li>
+        <li><a href="02-block.html">Block</a></li>
+        <li><a href="03-list.html">List</a></li>
+        <li><a href="04-background.html">Background</a></li>
+        <li><a href="05-border.html">Border</a></li>
+        <li><a href="06-box.html">Box</a></li>
+        <li><a href="07-position.html" class="active">Position</a></li>
+        <li><a href="08-at-rules.html">@ Rules</a></li>
+        <li><a href="09-font-icons.html">Font Icons</a></li>
+        <li><a href="10-animations.html">Animations</a></li>
+        <li><a href="11-flex.html">Flex</a></li>
+        <li><a href="12-grids.html">Grids</a></li>
+        <li><a href="13-video-n-audio.html">Video & Audio</a></li>
+        <li><a href="14-canvas.html">Canvas</a></li>
+        <li><a href="15-tables.html">Tables</a></li>
+        <li><a href="16-email.html">Email</a></li>
+        <li><a href="17-forms.html">Forms</a></li>
+        <li><a href="18-latest-html5-css3.html">Latest in HTML5 & CSS3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-header">
+    <h1>CSS Properties related to Positon</h1>
+    <p>Learn about all style properties related to fonts in a elaborate way with examples.</p>
+  </div>
+<!-- Demo of Position-color -->
+  <div class="container">
+    <header>
+      <h2>Position: <small> static | relative | absolute | fixed  |  sticky</small></h2>
+    </header>
+    <div class="demo-box position-demo-static">
+      <div class="bdr-1" >Position Static</div>
+      <div class="bdr-1" >Position Static</div>
+      <div class="bdr-1" >Position Static</div>
+      <div class="bdr-1" >Position Static</div>
+    </div>
+    <div class="demo-box">
+      <div class="bdr-1 bg-red demo-z-index" >Position Static</div>
+      <div class="bdr-1 position-demo-relative bg-lightpink" >Position Relative - Block level element</div>
+      <div class="bdr-1" >Position Static</div>
+      <div class="bdr-1" >Position Static</div>
+      <span class="bdr-1">Positin Default</span>
+      <span class="bdr-1 position-demo-relative bg-brown">Positin Relative - Inline element</span>
+      <span class="bdr-1">Positin Default</span>
+    </div>
+    <div class="demo-box pos-rel">
+      <div class="bdr-1 bg-red demo-pos-abs" >Position Absolute Block</div>
+      <span class="bdr-1 bg-orange demo-pos-abs" >Position Absolute Inline</span>
+    </div>
+    <div class="demo-box pos-rel">
+      <div class="bdr-1 bg-lightgreen demo-pos-fixed" >Position fixed Block</div>
+    </div>
+    <div class="dabba">
+      <div class="dabba-1">
+        <h2>01 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+      <div class="dabba-1">
+        <h2>02 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+      <div class="dabba-1">
+        <h2>03 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+      <div class="dabba-1">
+        <h2>04 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+      <div class="dabba-1">
+        <h2>05 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+      <div class="dabba-1">
+        <h2>06 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+      <div class="dabba-1">
+        <h2>07 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+      <div class="dabba-1">
+        <h2>08 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+      <div class="dabba-1">
+        <h2>09 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+      <div class="dabba-1">
+        <h2>10 Heading</h2>
+        <ul>
+          <li>01 List items</li>
+          <li>02 List items</li>
+          <li>03 List items</li>
+          <li>04 List items</li>
+          <li>05 List items</li>
+          <li>06 List items</li>
+          <li>07 List items</li>
+          <li>08 List items</li>
+          <li>09 List items</li>
+          <li>10 List items</li>
+          <li>11 List items</li>
+          <li>12 List items</li>
+          <li>13 List items</li>
+          <li>14 List items</li>
+          <li>15 List items</li>
+          <li>16 List items</li>
+          <li>17 List items</li>
+          <li>18 List items</li>
+          <li>19 List items</li>
+          <li>20 List items</li>
+          <li>21 List items</li>
+          <li>22 List items</li>
+          <li>23 List items</li>
+          <li>24 List items</li>
+          <li>25 List items</li>
+          <li>26 List items</li>
+          <li>27 List items</li>
+          <li>28 List items</li>
+          <li>29 List items</li>
+          <li>30 List items</li>
+          <li>31 List items</li>
+          <li>32 List items</li>
+          <li>33 List items</li>
+          <li>34 List items</li>
+          <li>35 List items</li>
+        </ul>
+      </div>
+
+
+
+      <div class="dabba-1">
+        <h2>This is Heading of</h2>
+      </div>
+    </div>
+  </div><!--  /EO container -->
+
+
+
+<!-- /- End of Site Header -->
+  <footer class="site-footer">
+    <p>&copy;2023, KriS' School of Web - all rights reserved.</p>
+  </footer>
+
+  <!-- Beginning of Site Footer -->
+
+</body>
+</html>
