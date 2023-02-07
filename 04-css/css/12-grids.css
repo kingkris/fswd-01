@@ -1,0 +1,52 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+Grid related style properties
++++++++++++++++++++++++++++++++++++++++++++
+grid
+grid-area
+grid-auto-columns
+grid-auto-flow
+grid-auto-rows
+grid-column
+grid-column-end
+grid-column-gap
+grid-column-start
+grid-gap
+grid-row
+grid-row-end
+grid-row-gap
+grid-row-start
+grid-template
+grid-template-areas
+grid-template-columns
+grid-template-rows
+Grids
+-----------------------
+https://www.mozilla.org/en-US/developer/css-grid/
+http://caniuse.com/#feat=css-grid
+https://www.w3.org/TR/css3-grid-layout/
+https://blogs.msdn.microsoft.com/ie/2011/04/14/ie10-platform-preview-and-css-features-for-adaptive-layouts/
+https://css-tricks.com/snippets/css/complete-guide-grid/
+https://alligator.io/css/css-grid-layout-fr-unit/
+https://css-tricks.com/introduction-fr-css-unit/
+https://gridbyexample.com/examples/
+CSS NAming
+------------------------
+http://getbem.com/naming/
+https://www.sitepoint.com/title-css-simple-approach-css-class-naming/
+http://bdavidxyz.com/blog/how-to-name-css-classes/
+https://blog.toughbyte.com/blabla-9fd86eae4e6c
+https://medium.com/@drublic/css-naming-conventions-less-rules-more-fun-12af220e949b
+https://zellwk.com/blog/css-architecture-1/
+auto;
+inherit;
+*/
+

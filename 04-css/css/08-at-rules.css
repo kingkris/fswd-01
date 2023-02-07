@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url('common.css');
+@import url('font-icons.css');
+
+
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+CSS @ Rules
++++++++++++++++++++++++++++++++++++++++++++
+    1.  @charset
+    2.  @import
+    3.  @fontface
+    4.  @media
+    5.  @keyframes
+Important links
++++++++++++++++++++++++++++++++++++++++++++
+https://developer.mozilla.org/en/docs/Web/CSS/At-rule
+https://css-tricks.com/the-at-rules-of-css/
+https://css-tricks.com/snippets/html/glyphs/
+https://daneden.github.io/animate.css/
+http://mynameismatthieu.com/WOW/
+http://animista.net/
+*/
+
+.fsz{
+  font-size: 100px;
+  color: aqua;
+}
+.fsz2{
+  font-size: 30px;
+  color: gold;
+}
+
+
+
+@media (min-width:900px){
+  body{
+    background-color: red;
+  }
+}
+@media (max-width:899px){
+  body{
+    background-color: blue;
+  }
+}
+
+
+
+
+
+/* 
+
+CSS for the layout
+-------------------------
+ */
+ .ccontainer{
+  box-sizing: border-box;
+  padding: 15px;
+ }
+ @media(min-width:1020px){
+  .ccontainer{
+    width: 1070px;
+    margin: 0 auto;
+    padding: 15px 0;
+   }
+}
+ .ccontainer::after{
+  content: "";
+  clear: both;
+  display: block;
+ }
+ .ccontainer *{
+  box-sizing: border-box;
+ }
+
+
+.hero{
+  min-height: 400px;
+  background: rgb(0,94,255);
+background: linear-gradient(0deg, rgba(0,94,255,1) 0%, rgba(31,89,188,1) 100%);
+}
+.services{
+  min-height: 400px;
+  background-color: #9FDEFF;
+}
+
+.services-ccontainer{
+  position: relative;
+  top: -100px;
+}
+
+
+.project{
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+@media(min-width:768px){
+  .project{
+    width: calc(50% - 16px);
+    float: left;
+    margin: 0 8px 15px;
+  }
+}
+@media(min-width:1024px){
+  .project{
+    width: calc(33.33% - 16px);
+  }
+}
+.project img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.pr-type{
+  float: left;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+.date{
+  float: right;
+  font-size: 14;
+  padding-right: 15px;
+}
+.project h3{
+  clear: both;
+  padding: 0 15px;
+}
+.project p{
+  padding: 0 15px;
+}

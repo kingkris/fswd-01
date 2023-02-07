@@ -1,0 +1,33 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+ Flex Rules
++++++++++++++++++++++++++++++++++++++++++++
+display: flex | inline-flex
+flex-direction: row | column | row-reverse | column-reverse
+flex-wrap: nowrap  | wrap | wrap-reverse
+justify-content: flex-start | flex-end | center | space-between | space-around
+align-items: flex-start | flex-end | center | baseline | stretch
+align-content: flex-start | flex-end | center | space-between | space-around | stretch
+flex-grow : 
+flex-shrink :
+flex-basis : <width> | fill | max-content | min-content | fit-content | content | 
+Shorthand is flex: [flex-grow] [flex-shrink] [flex-basis]
+Some important links
++++++++++++++++++++++++++++++++++++++++++++
+http://flexbox.buildwithreact.com/
+https://loading.io/flexbox/
+https://flexbox.help/
+http://bennettfeely.com/flexplorer/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
+https://flexbox.webflow.com/#collectiongrid
+*/
+
