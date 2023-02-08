@@ -1,0 +1,75 @@
+/* 
+  Common Styles
+  ****************************  */
+body{
+  font-family: 'Poppins', sans-serif;
+}
+/* **************************** 
+
+
+  Styles for Header
+  ****************************  */
+
+  .page-header{
+    padding: 10px 20px;
+    border: 1px solid #000;
+  }
+  .page-header::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .ph-ham{
+    background-image: url("../images/icon-menu.svg");
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    float: left;
+    margin-top: 20px;
+  }
+  .ph-logo{
+    margin: 0 40px;
+    border: 1px solid #000;
+    display: block;
+    text-align: center;
+  }
+  .ph-logo img{
+  }
+  .ph-search{
+    background-image: url("../images/icon-search.svg");
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    float: right;
+    margin-top: 20px;
+  }
+
+
+
+
+
+  /* **************************** 
+
+
+  Styles for Hero Banner
+  ****************************  */
+
+  .hero{}
+  .hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .lead-txt{
+    background-image: url("../images/bg-lead-text.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 20px 40px;
+    position: relative;
+    margin-top: -100px;
+  }
+  .amenities{
+    min-height: 50vh;
+    background: crimson;
+    padding: 20px;
+  }
