@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v1.1.0/modern-normalize.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="icon" href="favicon.ico">
@@ -36,7 +36,22 @@
 
 
   <div class="hero">
-    <img src="images/live-in-nature-hut.jpg" alt="">
+    <picture>
+      <source 
+        srcset="images/image-2@2x.jpg"
+        media="(min-width: 1000px)"
+      />
+      <source 
+        srcset="images/image-2.jpg"
+        media="(min-width: 600px)"
+      />
+      <img 
+        src="images/live-in-nature-hut.jpg" 
+        alt="Live in nature"
+      />
+    </picture>
+    
+    <h2>Unpack <span>Unravel</span> <b>Unlock</b></h2>
   </div>
   <div class="lead-txt">
     <h1>Dreaming to live in nature?</h1>
