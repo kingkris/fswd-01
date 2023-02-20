@@ -1,0 +1,17 @@
+// site-nav.scss
+
+$white:#FFF;
+
+.site-nav{
+  ul{
+    padding-left: 0;
+    list-style-type: none;
+    li a{
+      color: $white;
+
+      &:hover{
+        color: $link-hover-color;
+      }
+    }
+  }
+}

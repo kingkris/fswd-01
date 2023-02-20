@@ -1,0 +1,85 @@
+body {
+  background-color: #2C2C2C;
+  font-family: "Poppins", verdana, sans-serif;
+}
+
+.page-container {
+  display: flex;
+}
+
+.site-header {
+  width: 280px;
+  background-color: #464646;
+}
+.site-header .logo {
+  border: 1px solid #000;
+}
+
+.site-nav ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.site-nav ul li a {
+  color: #FFF;
+  display: block;
+  padding: 4px 10px;
+  text-decoration: none;
+  position: relative;
+}
+.site-nav ul li a:hover {
+  color: #FCB415;
+}
+.site-nav ul li a::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fdd47a;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.content-container {
+  padding: 20px;
+  border: 4px solid #FFF;
+  width: 100%;
+}
+
+.page-header {
+  background-color: #FCB415;
+  padding: 15px;
+}
+.page-header h1 {
+  font-size: 35.2px;
+  color: #FFF;
+  margin: 0;
+}
+.page-header p {
+  margin-top: 10px;
+}
+
+.bdr-1 {
+  background: #80ff80;
+  border: 3px solid #b3ffb3;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.bdr-1 h2 {
+  margin: 0;
+  line-height: 2;
+  font-size: 24px;
+}
+
+.dabba {
+  background: #ff8c8c;
+  border: 3px solid #ffbfbf;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.dabba h2 {
+  margin: 0;
+  line-height: 2;
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */
