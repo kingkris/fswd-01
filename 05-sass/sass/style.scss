@@ -1,33 +1,6 @@
+// @import 'site-nav';
 
-
-$primary-color : #FCB415;
-$white: #FFF;
-
-$page-bg-color : #2C2C2C;
-$header-bg-color: lighten($page-bg-color, 10%);
-
-$box-color:green;
-$blue:blue;
-$gold:#FFC000;
-$orange:orange;
-$darkpink:darkpink;
-
-$default-padding:15px;
-$default-margin:15px;
-$default-radius:10px;
-
-$text-color: gray;
-$link-color: blue;
-$visited-link-color: purple;
-$link-hover-color:$primary-color;
-
-
-
-
-$font-face: "Poppins", verdana, sans-serif;
-$base-font-size: 16px;
-
-$h1-font-size: $base-font-size * 2.2;
+@import 'variables';
 
 body{
   background-color: $page-bg-color;
@@ -38,39 +11,26 @@ body{
   display: flex;
 }
 
+@import 'hero-banner';
+
 .site-header{
-  width: 280px;
+  width: 80px;
   background-color: $header-bg-color;
   .logo{
     border: 1px solid #000;
+    padding: $default-padding;
+    img{width: 100%;}
+  }
+  @media (min-width:$tablet-width) {
+    width: 200px;
+  }
+  @media (min-width:$desktop-width) {
+    width: 280px;
   }
 }
-.site-nav{
-  ul{
-    padding-left: 0;
-    list-style-type: none;
-    li a{
-      color: $white;
-      display: block;
-      padding: 4px 10px;
-      text-decoration: none;
-      position: relative;
 
-      &:hover{
-        color: $link-hover-color;
-      }
-      &::after{
-        content: "";
-        width: 100%;
-        height: 1px;
-        background-color: lighten($primary-color, 20%);
-        position: absolute;
-        left: 0;
-        bottom: 0;
-      }
-    }
-  }
-}
+@import 'site-nav-p';
+
 
 
 .content-container{
@@ -106,8 +66,32 @@ body{
 
 .bdr-1{
   @include box();
+
 }
 
 .dabba{
   @include box(rgb(140, 0, 0));
+}
+
+.only-mobile{
+  @media (max-width: $tablet-width - 1 ) {    
+    background-color: $darkpink;
+    padding: $default-padding;
+    margin-bottom: $default-margin;
+  }
+  @media (min-width:$tablet-width) {
+    display: none;
+  }
+}
+
+.form-row{
+  padding: $default-padding;
+  border-top: solid 1px #CCC;
+  display: flex;
+
+  label{
+    width: 200px;
+    text-align: right;
+    padding-right: $default-padding;
+  }
 }

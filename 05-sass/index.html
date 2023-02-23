@@ -49,7 +49,12 @@
     </header>
   
     <div class="content-container">
-  
+      <div class="hero-banner">
+        <h1>In the process of styling the world <small>One element at a time</small> </h1>
+      </div>
+      <div class="only-mobile">
+        This Element will appera only in mobile view
+      </div>
       <div class="page-header">
         <h1>CSS Properties related to Positon</h1>
         <p>Learn about all style properties related to fonts in a elaborate way with examples.</p>
@@ -59,20 +64,35 @@
         <header>
           <h2>Position: <small> static | relative | absolute | fixed  |  sticky</small></h2>
         </header>
-        <div class="demo-box position-demo-static">
-          <div class="bdr-1" >Position Static</div>
-          <div class="bdr-1" >Position Static</div>
-          <div class="bdr-1" >Position Static</div>
-          <div class="bdr-1" >Position Static</div>
-        </div>
         <div class="demo-box">
-          <div class="bdr-1 bg-red demo-z-index" >Position Static</div>
-          <div class="bdr-1 position-demo-relative bg-lightpink" >Position Relative - Block level element</div>
-          <div class="bdr-1" >Position Static</div>
-          <div class="bdr-1" >Position Static</div>
-          <span class="bdr-1">Positin Default</span>
-          <span class="bdr-1 position-demo-relative bg-brown">Positin Relative - Inline element</span>
-          <span class="bdr-1">Positin Default</span>
+          <div class="bdr-1" >
+            <h2>Form Elements</h2>
+
+
+            <form action="thankyou.html" method="post">
+
+              <div class="form-row">
+                <label for="name">Enter your name</label>
+                <input type="text" name="FullName" id="name" required autofocus value="KriShne Gowda">
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" name="UserEmail" id="email" autofocus placeholder="Enter your email id" >
+              </div>
+              <!-- <div class="form-row">
+                <label>Choose your color
+                <input type="color" name="color" id="color"></label>
+              </div> -->
+              <div class="form-row">
+                <button type="submit">Submit</button>
+                <input type="submit" value="Submit">
+              </div>
+              
+
+            </form>
+
+
+          </div>
         </div>
         <div class="demo-box pos-rel">
           <div class="bdr-1 bg-red demo-pos-abs" >Position Absolute Block</div>

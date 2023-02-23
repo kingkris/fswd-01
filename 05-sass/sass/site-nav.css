@@ -4,4 +4,7 @@
 }
 .site-nav ul li a {
   color: #FFF;
+}
+.site-nav ul li a:hover {
+  color: green;
 }/*# sourceMappingURL=site-nav.css.map */

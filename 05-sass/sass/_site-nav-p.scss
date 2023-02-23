@@ -1,0 +1,44 @@
+
+
+.site-nav--aaa{
+  ul{
+    padding-left: 0;
+    list-style-type: none;
+    li a{
+      color: $white;
+
+      &:hover{
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+
+.site-nav{
+  ul{
+    padding-left: 0;
+    list-style-type: none;
+    li a{
+      color: $white;
+      display: block;
+      padding: 4px 10px;
+      text-decoration: none;
+      position: relative;
+
+      &:hover{
+        color: $link-hover-color;
+      }
+      &::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: lighten($primary-color, 20%);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+.hero-banner{
+  background-color: $primary-color;
+  padding: 5px;
+  margin-bottom: $default-margin;
+  background-image: url('../images/scenery_01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  h1{
+    background-color: $hero-banner-txt-bg;
+    width: 85%;
+    padding: $default-padding;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 10px;
+
+    @media (min-width:$tablet-width) {
+      width: 75%;
+    }
+    @media (min-width:$desktop-width) {
+      width: 55%;
+    }
+  }
+}
