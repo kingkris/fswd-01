@@ -69,7 +69,7 @@
             <h2>Form Elements</h2>
 
 
-            <form action="thankyou.html" method="post">
+            <form action="thankyou.html" method="get">
 
               <div class="form-row">
                 <label for="name">Enter your name</label>
@@ -79,6 +79,88 @@
                 <label for="email">Email</label>
                 <input type="email" name="UserEmail" id="email" autofocus placeholder="Enter your email id" >
               </div>
+              <div class="form-row">
+                <label for="theme">Choose your theme</label>
+                <input type="color" name="Theme" id="theme" >
+              </div>
+              <div class="form-row">
+                <label for="sal-range">Choose your Salary Range</label>
+                <input type="range" name="Range" id="sal-range" >
+              </div>
+              <div class="form-row">
+                <label for="salary">Choose your Salary</label>
+                <input type="number" name="salary" id="salary" min="100" max="2000" step="50" >
+              </div>
+              <div class="form-row">
+                <label for="dob">Choose your Salary</label>
+                <input type="date" name="dob" id="dob"  >
+              </div>
+
+              <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-row">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="First Name" id="firstname" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                  <p class="label">Preferred Batch</p>
+                  <label>
+                    <input type="checkbox" name="batches" id="batch-early">
+                    Early Morning Batch
+                  </label>
+                  <label>
+                    <input type="checkbox" name="batches" id="batch-morning">
+                    Morning Batch
+                  </label>
+                  <label>
+                    <input type="checkbox" name="batches" id="batch-evening" checked>
+                    Evening Batch
+                  </label>
+                </div>
+                <div class="form-row">
+                  <p class="label">Preferred Batch</p>
+                  <label>
+                    <input type="radio" name="batch" id="bbatch-early">
+                    Early Morning Batch
+                  </label>
+                  <label>
+                    <input type="radio" name="batch" id="bbatch-morning">
+                    Morning Batch
+                  </label>
+                  <label>
+                    <input type="radio" name="batch" id="bbatch-evening">
+                    Evening Batch
+                  </label>
+                </div>
+                <div class="form-row">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="First Name" id="firstname" placeholder="First Name">
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Other Elements</legend>
+
+                <div class="form-row">
+                  <label for="">Multi Select</label>
+                  <select name="m-select" id="m-select">
+                    <option value="Select your city">Select your city</option>
+                    <optgroup label="Major Cities">
+
+                      <option value="Bengaluru">Bengaluru</option>
+                      <option value="Mysuru">Mysuru</option>
+                      <option value="Mangaluru">Mangaluru</option>
+                    </optgroup>
+                    <optgroup label="other cities">
+                      <option value="tumakuru">tumakuru</option>
+                      <option value="Mandya">Mandya</option>
+                      <option value="Hubballi">Hubballi</option>
+  
+                    </optgroup>
+                  </select>
+                </div>
+              </fieldset>
+
+
               <!-- <div class="form-row">
                 <label>Choose your color
                 <input type="color" name="color" id="color"></label>
