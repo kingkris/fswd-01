@@ -1,0 +1,19 @@
+@include media-breakpoint-up(sm) { 
+  body{
+    background-color: $gray-100;
+  }
+  .container{
+    background-color: $orange;
+  }
+ }
+
+ @include media-breakpoint-down(sm) { 
+  body{
+    background-color: $gray-500;
+  }
+ }
+
+@include media-breakpoint-only(md) { 
+  .container{background-color: $green-400;}
+}
+
