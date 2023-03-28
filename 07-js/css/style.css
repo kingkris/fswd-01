@@ -167,3 +167,51 @@ body {
 .btn-i {
   margin-left: 10px;
 }
+
+.cards {
+  margin: 30px 15px;
+  padding: 15px 0;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cards > div {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 22%;
+  border: 1px solid #d1d1d1;
+}
+.cards > div.the-lucky-one {
+  border-color: #0dc300;
+  background-color: #bbf768;
+}
+.cards > div img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+.cards > div span {
+  display: block;
+}
+
+.overlay {
+  background-color: #000000b7;
+  position: absolute;
+  inset: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.hidden {
+  display: none;
+}
