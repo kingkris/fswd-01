@@ -15,10 +15,21 @@ headerEle.textContent = "Namaste!";
 console.log(document.querySelector("#firstName").value);
 document.querySelector("#firstName").value = "Rajesh";
 
-console.log(document.querySelector("#firstName").value);
+const inptBoxEle = document.querySelector("#firstName");
+let inptBoxVal = inptBoxEle.value;
+console.log(inptBoxVal);
 
 document.querySelector(".btn-a").addEventListener("click", function () {
-  console.log("Btn a clicked");
+  inptBoxVal = Number(inptBoxEle.value);
+  console.log(inptBoxVal);
+
+  if (inptBoxVal) {
+    console.log(`Year entered is ${inptBoxVal}`);
+    console.log(`Age as of Today would be  ${2023 - inptBoxVal} Years`);
+    console.log(`Age as of Today would be  ${(2023 - inptBoxVal) * 12} Months`);
+    console.log(`Age as of Today would be  ${(2023 - inptBoxVal) * 52} Weeks`);
+    console.log(`Age as of Today would be  ${(2023 - inptBoxVal) * 365} Days`);
+  }
 });
 
 console.log(Math.trunc(Math.random() * 10));
@@ -60,17 +71,32 @@ console.log(ele);
 let content = "";
 
 const theLuckyOne = Math.trunc(Math.random() * names.length);
-console.log(theLuckyOne);
+console.log("The Random Number generated is " + theLuckyOne);
 
-for (i = 0; i < names.length; i++) {
-  if (i === theLuckyOne) {
-    console.log(`${i} ${names[i]} is the luckiest One`);
+// for (i = 0; i < names.length; i++) {
+//   if (i === theLuckyOne) {
+//     console.log(`${i} ${names[i]} is the luckiest One`);
+//   }
+//   content = `${names[i]}, `;
+//   ele.textContent += content;
+// }
+let str = "";
+
+for (const item of names) {
+  console.log("item is at ", names.indexOf(item));
+  let sty;
+  if (names.indexOf(item) === theLuckyOne) {
+    sty = ' class="the-lucky-one"';
+  } else {
+    sty = "";
   }
-  content = `${names[i]}, `;
-  ele.textContent += content;
+  str += `<div ${sty} >
+  <img src="https://fakeimg.pl/180x180/CCC?text=${item}" />
+  <span>${item}</span>
+</div>`;
 }
 
-ele.textContent += ` ${names[theLuckyOne]} is the luckiest One`;
+ele.innerHTML = str;
 
 const newEle = document.querySelector(".style-change");
 
@@ -97,4 +123,8 @@ document.querySelector(".btn-i").addEventListener("click", function () {
   if (modal.classList.contains("hidden")) {
     modal.classList.remove("hidden");
   }
+});
+
+document.addEventListener("keypress", function (e) {
+  console.log("SOme key Got pressed", e);
 });

@@ -128,14 +128,14 @@ body {
 .dabba {
   background: #ff8c8c;
   border: 3px solid #ffbfbf;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   margin-bottom: 15px;
+  width: 200px;
 }
-.dabba h2 {
-  margin: 0;
-  line-height: 2;
-  font-size: 24px;
+.dabba img {
+  max-width: 100%;
+  display: block;
 }
 
 @media (max-width: 767px) {
